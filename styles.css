@@ -40,9 +40,7 @@ body::before {
     align-self: center;
    z-index: 1;
 }
-.svg-img{
-   
-}
+
 .card-header {
     background-color: white;
     border-radius: 20px;
