@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     font-family: 'Kumbh Sans', sans-serif;
     height: 100%;
+    overflow: hidden;
 }
  
 
@@ -16,16 +17,16 @@ body::before {
     bottom: -550px;
     right: -237px;
     padding: 31rem;
-    transform: rotate(330deg);
+    transform: rotate(230deg);
   }
   
   body::after {
-    content: "kotesh";
+    content: "";
     position: absolute;
     background-image: url("../images/bg-pattern-top.svg");
     background-size: cover;
-    top: -316px;
-    left: -300px;
+    top: -446px;
+    left: -310px;
     padding: 31rem;
     transform: rotate(-11deg);
 
@@ -47,7 +48,7 @@ body::before {
     background-color: white;
     border-radius: 20px;
 box-shadow: 0px 2px 10px   #1BA1AD;
-margin-top: 20vh;
+margin: 20vh  auto auto auto;
 height: 349px;
 }
 
@@ -102,7 +103,20 @@ height: 349px;
 .attribution{
     text-align: center;
 }
-
+@media (max-width:750px){
+    body::before {
+        content: "";
+        position: absolute;
+        background-image: url("../images/bg-pattern-top.svg");
+        background-size: cover;
+        bottom: -550px;
+        right: -237px;
+        padding: 31rem;
+        transform: rotate(230deg);
+        margin-left: auto;
+        overflow: hidden;
+      }
+}
 
 
 
